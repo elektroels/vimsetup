@@ -25,7 +25,8 @@ call vundle#end()				" call all plugins b4 this line
 set regexpengine=1				" vim-javascript uses this
 filetype plugin indent on			" required
 syntax enable
-set mouse=a
+set mouse=a					" enable mouse
+set number					" display line numbers
 colorscheme molokai
 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
