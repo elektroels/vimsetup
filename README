@@ -1,2 +1,6 @@
-My .vimrc file
-  use it for inspiration :-)
+My .vimrc files
+  use for inspiration :-)
+
+Pre-requisites:
+  https://github.com/VundleVim/Vundle.vim
+  https://github.com/Valloric/YouCompleteMe
