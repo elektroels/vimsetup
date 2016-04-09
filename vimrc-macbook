@@ -6,26 +6,24 @@ let &t_AF="\e[38;5;%dm"
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'			" Vundle manage Vundle - required
+Plugin 'gmarik/Vundle.vim'			    " Vundle manage Vundle - required
 Plugin 'Valloric/YouCompleteMe'			" AutoCompleteTool
-
-"Plugin 'fatih/vim-go'				" GO Language
-
-Plugin 'jelera/vim-javascript-syntax'		" JavaScript
+Plugin 'leafgarland/typescript-vim'      " TypeScrit
+Plugin 'fatih/vim-go'				    " GO Language
+Plugin 'jelera/vim-javascript-syntax'	" JavaScript
 Plugin 'pangloss/vim-javascript'		" JavaScript
 Plugin 'marijnh/tern_for_vim'			" JavaScript parser
-
 Plugin 'scrooloose/syntastic'			" linting
-
 Plugin 'flazz/vim-colorschemes'			" General
 Plugin 'nathanaelkane/vim-indent-guides'	" General
 call vundle#end()				" call all plugins b4 this line
+
+colorscheme zephyr 
 
 set regexpengine=1				" vim-javascript uses this
 syntax enable
 set mouse=a					" enable mouse
 set number					" display line numbers
-colorscheme molokai
 
 filetype plugin indent on
 set tabstop=4					" show existing tab with 4 spaces width
