@@ -8,7 +8,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'			    " Vundle manage Vundle - required
 Plugin 'Valloric/YouCompleteMe'			" AutoCompleteTool
-Plugin 'leafgarland/typescript-vim'      " TypeScrit
+Plugin 'leafgarland/typescript-vim'     " TypeScrit
+Plugin 'hail2u/vim-css3-syntax'         " CSS3 syntax
 Plugin 'fatih/vim-go'				    " GO Language
 Plugin 'jelera/vim-javascript-syntax'	" JavaScript
 Plugin 'pangloss/vim-javascript'		" JavaScript
@@ -22,6 +23,7 @@ colorscheme zephyr
 
 set regexpengine=1				" vim-javascript uses this
 syntax enable
+
 set mouse=a					" enable mouse
 set number					" display line numbers
 
@@ -29,8 +31,9 @@ filetype plugin indent on
 set tabstop=4					" show existing tab with 4 spaces width
 set shiftwidth=4				" when indenting with '>', use 4 spaces width
 set expandtab					" On pressing tab, insert 4 spaces
+
 autocmd Filetype yml setlocal ts=2 sw=2 sts=0
-autocmd Filetype html setlocal ts=2 sw=2 sts=0
+autocmd Filetype html setlocal ts=4 sw=4 sts=0
 autocmd Filetype ruby setlocal ts=2 sw=2 sts=0
 autocmd Filetype json setlocal ts=2 sw=2 sts=0
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
